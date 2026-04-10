@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyper 1 — Motocicleta Eléctrica | OFERO Colombia</title>
+  <meta name="description" content="Zyper 1, la motocicleta eléctrica de OFERO Colombia. 500W de potencia, 55 km de autonomía, certificación IP67. Diseño deportivo para la ciudad.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Zyper 1 — Motocicleta Eléctrica | OFERO Colombia">
+  <meta property="og:description" content="Libertad para rodar con la Zyper 1. 500W de potencia, 55 km de autonomía, certificación IP67.">
+  <meta property="og:image" content="https://oferocol.com/wp-content/uploads/2025/02/logoverde.png">
+  <!-- TODO: og:image → URL absoluta de assets/hero-zyper-carretera.jpg cuando esté en producción -->
+  <meta property="og:url" content="https://oferocol.com/zyper-1">
+  <!-- TODO: og:url → actualizar con URL final de deploy -->
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://oferocol.com/wp-content/uploads/2025/02/isotipo-verde.png">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="/" class="site-header__brand" aria-label="OFERO Colombia">
+        <img src="https://oferocol.com/wp-content/uploads/2025/02/logoverde.png" alt="OFERO Colombia">
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-header__nav" id="site-nav">
+        <ul class="site-header__menu">
+          <li><a href="https://oferocol.com/">Inicio</a></li>
+          <li><a href="https://oferocol.com/vehiculos-electricos/">Vehículos Eléctricos</a></li>
+          <li><a href="https://oferocol.com/servicios/">Servicio Técnico</a></li>
+          <li><a href="https://oferocol.com/articulos/">Artículos</a></li>
+          <li class="has-dropdown">
+            <a href="#">Contacto ▾</a>
+            <div class="dropdown-menu">
+              <a href="https://oferocol.com/tiendas/">Ubicación tiendas Ofero</a>
+              <a href="https://oferocol.com/propietarios/">Quiero ser propietario de tienda Ofero</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="site-header__divider"></div>
+
+        <div class="site-header__social">
+          <a href="https://www.facebook.com/p/Ofero-Colombia-61557904795382/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M12,2 C17.52,2 22,6.5 22,12.04 C22,17.14 18.21,21.36 13.31,22 L13.3,14.24 L15.48,14.24 L15.77,11.51 L13.3,11.51 L13.3,10.15 C13.3,9.43 13.37,9.05 14.39,9.05 L15.75,9.05 L15.75,6.32 L13.57,6.32 C10.96,6.32 10.04,7.65 10.04,9.87 L10.04,11.51 L8.4,11.51 L8.4,14.24 L10.04,14.24 L10.04,21.89 C5.45,20.97 2,16.91 2,12.04 C2,6.5 6.48,2 12,2 Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/oferocolombia/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12,2 C14.72,2 15.06,2.01 16.12,2.06 C17.19,2.11 17.91,2.28 18.55,2.53 C19.21,2.78 19.77,3.12 20.32,3.68 C20.88,4.23 21.22,4.79 21.48,5.45 C21.72,6.09 21.89,6.81 21.94,7.88 C21.99,8.94 22,9.28 22,12 C22,14.72 21.99,15.06 21.94,16.12 C21.89,17.19 21.72,17.91 21.48,18.55 C21.22,19.21 20.88,19.77 20.32,20.32 C19.77,20.88 19.21,21.22 18.55,21.47 C17.91,21.72 17.19,21.89 16.12,21.94 C15.06,21.99 14.72,22 12,22 C9.28,22 8.94,21.99 7.88,21.94 C6.81,21.89 6.09,21.72 5.45,21.47 C4.79,21.22 4.23,20.88 3.68,20.32 C3.12,19.77 2.78,19.21 2.53,18.55 C2.28,17.91 2.11,17.19 2.06,16.12 C2.01,15.06 2,14.72 2,12 C2,9.28 2.01,8.94 2.06,7.88 C2.11,6.81 2.28,6.09 2.53,5.45 C2.78,4.79 3.12,4.23 3.68,3.68 C4.23,3.12 4.79,2.78 5.45,2.53 C6.09,2.28 6.81,2.11 7.88,2.06 C8.94,2.01 9.28,2 12,2 Z M12,6.86 C9.16,6.86 6.87,9.16 6.87,12 C6.87,14.84 9.16,17.13 12,17.13 C14.84,17.13 17.13,14.84 17.13,12 C17.13,9.16 14.84,6.86 12,6.86 Z M12,15.33 C10.16,15.33 8.67,13.84 8.67,12 C8.67,10.16 10.16,8.67 12,8.67 C13.84,8.67 15.33,10.16 15.33,12 C15.33,13.84 13.84,15.33 12,15.33 Z M17.34,5.46 C16.68,5.46 16.14,6 16.14,6.66 C16.14,7.32 16.68,7.86 17.34,7.86 C18,7.86 18.54,7.32 18.54,6.66 C18.54,6 18,5.46 17.34,5.46 Z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@oferocolombia" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M20,10.09 C19.83,10.11 19.67,10.12 19.51,10.12 C17.72,10.12 16.05,9.21 15.07,7.70 L15.07,15.92 C15.07,19.28 12.37,22 9.04,22 C5.70,22 3,19.28 3,15.92 C3,12.57 5.70,9.85 9.04,9.85 C9.16,9.85 9.28,9.86 9.41,9.87 L9.41,12.86 C9.28,12.85 9.16,12.82 9.04,12.82 C7.33,12.82 5.96,14.21 5.96,15.92 C5.96,17.64 7.33,19.03 9.04,19.03 C10.74,19.03 12.24,17.68 12.24,15.96 L12.27,2 L15.12,2 C15.38,4.57 17.44,6.58 20,6.76 L20,10.09 Z"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT — REEMPLAZA ESTO ===== -->
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="product-hero" aria-label="Zyper 1 — Motocicleta eléctrica OFERO">
+      <img
+        src="content/assets/hero-zyper-carretera.jpg"
+        alt="Motocicleta eléctrica Zyper 1 en carretera con paisaje al fondo"
+        class="product-hero__bg"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      >
+      <div class="product-hero__overlay" aria-hidden="true"></div>
+      <div class="container product-hero__content">
+        <div class="product-hero__text-block">
+          <img
+            src="content/assets/hero-zyper-carretera-logo.png"
+            alt="Zyper 1 — Libertad para rodar"
+            class="product-hero__logo"
+          >
+          <img
+            src="content/assets/hero-zyper-carretera-specs.png"
+            alt="Especificaciones: 150 kg capacidad de carga, 50 km autonomía, 500 W potencia"
+            class="product-hero__specs-img"
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ===== /HERO ===== -->
+
+    <!-- ===== FEATURES ===== -->
+
+    <!-- Feature 1 — Faro deportivo (texto izq, imagen der) -->
+    <section class="feature-alt bg-white" data-glare>
+      <div class="container">
+        <div class="feature-alt__grid feature-alt--reverse">
+          <div class="feature-alt__image">
+            <img src="content/assets/feature-1-faro-led.png" alt="Faro LED deportivo con luz diurna de la Zyper 1" loading="eager">
+          </div>
+          <div class="feature-alt__text">
+            <h2>Diseño de faro deportivo</h2>
+            <p>Líneas definidas y dinámicas con un brillante faro LED y luz diurna que garantizan una conducción segura tanto de día como de noche.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 2 — Ligera y fácil (imagen izq con fondo verde, texto der centrado) -->
+    <section class="feature-alt feature-alt--ligera bg-white">
+      <div class="container">
+        <div class="feature-alt__grid">
+          <div class="feature-alt__image feature-alt__image--fondo">
+            <img src="content/assets/feature-2-conducir-ligera-fondobike.png" alt="" class="feature-alt__fondo" aria-hidden="true" loading="lazy">
+            <img src="content/assets/feature-2-conducir-ligera.png" alt="Zyper 1 — diseño compacto y ligero" class="feature-alt__moto" loading="lazy">
+          </div>
+          <div class="feature-alt__text feature-alt__text--center">
+            <h2>Ligera y fácil de conducir</h2>
+            <p>El tamaño optimizado del cuerpo y la altura del asiento hacen que la moto sea más fácil de controlar, permitiendo una conducción suave y ágil por las calles de la ciudad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 3 — Manillar aeronáutico (texto arriba centrado, imagen abajo full-width) -->
+    <section class="feature-stacked" data-gradient="manillar">
+      <div class="container feature-stacked__text">
+        <h2>Diseño moderno de manillar estilo aeronáutico</h2>
+        <p>El manillar de estilo aeronáutico, limpio y estilizado, mejora la apariencia general mientras ofrece un control más fácil, cómodo e intuitivo.</p>
+      </div>
+      <div class="feature-stacked__image">
+        <img src="content/assets/feature-3-manillar.png" alt="Manillar de estilo aeronáutico de la Zyper 1" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Feature 4 — Amortiguador (texto izq, imagen der, fondo default) -->
+    <section class="feature-alt feature-alt--reverse">
+      <div class="container">
+        <div class="feature-alt__grid">
+          <div class="feature-alt__image">
+            <img src="content/assets/feature-4-amortiguador.png" alt="Sistema de suspensión y frenos de tambor de la Zyper 1" loading="lazy">
+          </div>
+          <div class="feature-alt__text">
+            <h2>Amortiguador de alto rendimiento</h2>
+            <p>Equipado con frenos de tambor de 170 mm en la parte delantera y trasera, la suspensión mejorada aumenta la estabilidad y ofrece una conducción más suave y cómoda en caminos irregulares.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 5 — Batería (imagen centrada + glare verde) -->
+    <section class="feature-glare bg-white" data-glare-green>
+      <div class="container">
+        <div class="feature-glare__image">
+          <img src="content/assets/feature-5-bateria.png" alt="Batería de litio 48V 15Ah de la Zyper 1" loading="lazy">
+        </div>
+        <div class="feature-glare__text">
+          <h2>Batería mejorada</h2>
+          <p>La batería mejorada ofrece una autonomía de hasta 55 km, ideal para desplazamientos diarios y trayectos urbanos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 6 — Motor (imagen centrada + glare verde) -->
+    <section class="feature-glare" data-glare-green>
+      <div class="container">
+        <div class="feature-glare__image">
+          <img src="content/assets/feature-6-motor.png" alt="Motor 500W de la Zyper 1 con controlador de 6 transistores" loading="lazy">
+        </div>
+        <div class="feature-glare__text">
+          <h2>Sistema de potencia mejorado</h2>
+          <p>Los motores de 20" con controlador de 6 transistores proporcionan mayor potencia y facilitan la conducción en subidas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== /FEATURES ===== -->
+
+    <!-- ===== IMPERMEABILIDAD ===== -->
+    <section class="waterproof" aria-label="Certificaciones de impermeabilidad">
+      <div class="waterproof__inner">
+        <div class="waterproof__content">
+          <h2>Totalmente impermeable,<br>conduce con confianza</h2>
+          <div class="waterproof__cards">
+
+            <div class="cert-card">
+              <div class="cert-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="cert-card__label">Certificación IP55</p>
+                <p class="cert-card__desc">Todo el cuerpo cuenta con certificación IP55 — protección contra polvo y chorros de agua desde cualquier dirección.</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="cert-card__label">Certificación IP67</p>
+                <p class="cert-card__desc">La batería cuenta con certificación IP67 — protección completa contra polvo e inmersión en agua hasta 1 metro.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="waterproof__image">
+          <img src="content/assets/impermeable-moto.png" alt="Zyper 1 bajo la lluvia mostrando su protección IP67" loading="lazy">
+        </div>
+      </div>
+    </section>
+    <!-- ===== /IMPERMEABILIDAD ===== -->
+
+    <!-- ===== VARIANTES DE COLOR ===== -->
+    <section class="color-variants" aria-label="Variantes de color disponibles">
+      <div class="container">
+        <h2 class="color-variants__title">Elige tu color favorito</h2>
+        <div class="color-variants__grid">
+
+          <div class="color-variant-card">
+            <div class="color-variant-card__image">
+              <img src="content/assets/color-rojo-negro.png" alt="Zyper 1 en color Rojo Ferrari con acabado Negro brillante" loading="lazy">
+              <!-- TODO: imagen — assets/color-rojo-negro.jpg -->
+            </div>
+            <p class="color-variant-card__name">Rojo Ferrari / Negro brillante</p>
+          </div>
+
+          <div class="color-variant-card">
+            <div class="color-variant-card__image">
+              <img src="content/assets/color-amarillo-negro.png" alt="Zyper 1 en color Amarillo anaranjado con acabado Negro brillante" loading="lazy">
+              <!-- TODO: imagen — assets/color-amarillo-negro.jpg -->
+            </div>
+            <p class="color-variant-card__name">Amarillo anaranjado / Negro brillante</p>
+          </div>
+
+          <div class="color-variant-card">
+            <div class="color-variant-card__image">
+              <img src="content/assets/color-negro.png" alt="Zyper 1 en color Negro brillante" loading="lazy">
+              <!-- TODO: imagen — assets/color-negro.jpg -->
+            </div>
+            <p class="color-variant-card__name">Negro brillante</p>
+          </div>
+
+          <div class="color-variant-card">
+            <div class="color-variant-card__image">
+              <img src="content/assets/color-gris.png" alt="Zyper 1 en color Gris elegante" loading="lazy">
+              <!-- TODO: imagen — assets/color-gris.jpg -->
+            </div>
+            <p class="color-variant-card__name">Gris elegante</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ===== /VARIANTES DE COLOR ===== -->
+
+    <!-- ===== ESPECIFICACIONES ===== -->
+    <section class="spec-table" aria-label="Especificaciones técnicas de la Zyper 1">
+      <div class="container">
+        <h2 class="spec-table__title">Especificaciones técnicas</h2>
+        <div class="spec-table__wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Característica</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Dimensiones del vehículo</th>
+                <td>1535 × 705 × 1075 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">Tiempo de carga</th>
+                <td>4 – 6 horas</td>
+              </tr>
+              <tr>
+                <th scope="row">Motor</th>
+                <td>48V 500W</td>
+              </tr>
+              <tr>
+                <th scope="row">Energía de la batería</th>
+                <td>Litio 720 Wh</td>
+              </tr>
+              <tr>
+                <th scope="row">Controlador</th>
+                <td>48V 9G TUBES</td>
+              </tr>
+              <tr>
+                <th scope="row">Pantalla</th>
+                <td>LED</td>
+              </tr>
+              <tr>
+                <th scope="row">Tamaño de llanta (delantera/trasera)</th>
+                <td>3.0-10</td>
+              </tr>
+              <tr>
+                <th scope="row">Freno</th>
+                <td>Tambor 170 mm (delantero y trasero)</td>
+              </tr>
+              <tr>
+                <th scope="row">Velocidad máxima</th>
+                <td>40 km/h</td>
+              </tr>
+              <tr>
+                <th scope="row">Capacidad de la batería</th>
+                <td>48V 15Ah Litio</td>
+              </tr>
+              <tr>
+                <th scope="row">Autonomía máxima</th>
+                <td>50 km (modo ECO)</td>
+              </tr>
+              <tr>
+                <th scope="row">Desbloqueo</th>
+                <td>NFC</td>
+              </tr>
+              <tr>
+                <th scope="row">Peso</th>
+                <td>52 kg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- ===== /ESPECIFICACIONES ===== -->
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="cta-final" aria-label="Llamado a la acción — Zyper 1">
+      <div class="container">
+        <h2>¿Listo para rodar con Zyper 1?</h2>
+        <p>Visítanos en la tienda OFERO más cercana o agenda una prueba de manejo.</p>
+        <div class="cta-final__actions">
+          <a
+            href="https://oferocol.com/tiendas/"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+            aria-label="Ver tiendas OFERO Colombia"
+          >
+            Ver tiendas
+          </a>
+          <a
+            href="https://wa.me/+573001948686"
+            class="btn btn-outline-white"
+            target="_blank"
+            rel="noopener"
+            aria-label="Agendar prueba de manejo por WhatsApp"
+          >
+            Agendar prueba
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== /CTA FINAL ===== -->
+  </main>
+  <!-- ===== /MAIN CONTENT ===== -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__brand">
+        <img src="https://oferocol.com/wp-content/uploads/2025/02/logoverde.png" alt="OFERO Colombia">
+      </div>
+      <p class="site-footer__tagline">
+        ¡Bienvenido a la nueva revolución de movilidad eléctrica en Colombia! ⚡
+      </p>
+      <div class="site-footer__social">
+        <a href="https://www.facebook.com/p/Ofero-Colombia-61557904795382/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M12,2 C17.52,2 22,6.5 22,12.04 C22,17.14 18.21,21.36 13.31,22 L13.3,14.24 L15.48,14.24 L15.77,11.51 L13.3,11.51 L13.3,10.15 C13.3,9.43 13.37,9.05 14.39,9.05 L15.75,9.05 L15.75,6.32 L13.57,6.32 C10.96,6.32 10.04,7.65 10.04,9.87 L10.04,11.51 L8.4,11.51 L8.4,14.24 L10.04,14.24 L10.04,21.89 C5.45,20.97 2,16.91 2,12.04 C2,6.5 6.48,2 12,2 Z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@oferocolombia" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M20,10.09 C19.83,10.11 19.67,10.12 19.51,10.12 C17.72,10.12 16.05,9.21 15.07,7.70 L15.07,15.92 C15.07,19.28 12.37,22 9.04,22 C5.70,22 3,19.28 3,15.92 C3,12.57 5.70,9.85 9.04,9.85 C9.16,9.85 9.28,9.86 9.41,9.87 L9.41,12.86 C9.28,12.85 9.16,12.82 9.04,12.82 C7.33,12.82 5.96,14.21 5.96,15.92 C5.96,17.64 7.33,19.03 9.04,19.03 C10.74,19.03 12.24,17.68 12.24,15.96 L12.27,2 L15.12,2 C15.38,4.57 17.44,6.58 20,6.76 L20,10.09 Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/oferocolombia/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12,2 C14.72,2 15.06,2.01 16.12,2.06 C17.19,2.11 17.91,2.28 18.55,2.53 C19.21,2.78 19.77,3.12 20.32,3.68 C20.88,4.23 21.22,4.79 21.48,5.45 C21.72,6.09 21.89,6.81 21.94,7.88 C21.99,8.94 22,9.28 22,12 C22,14.72 21.99,15.06 21.94,16.12 C21.89,17.19 21.72,17.91 21.48,18.55 C21.22,19.21 20.88,19.77 20.32,20.32 C19.77,20.88 19.21,21.22 18.55,21.47 C17.91,21.72 17.19,21.89 16.12,21.94 C15.06,21.99 14.72,22 12,22 C9.28,22 8.94,21.99 7.88,21.94 C6.81,21.89 6.09,21.72 5.45,21.47 C4.79,21.22 4.23,20.88 3.68,20.32 C3.12,19.77 2.78,19.21 2.53,18.55 C2.28,17.91 2.11,17.19 2.06,16.12 C2.01,15.06 2,14.72 2,12 C2,9.28 2.01,8.94 2.06,7.88 C2.11,6.81 2.28,6.09 2.53,5.45 C2.78,4.79 3.12,4.23 3.68,3.68 C4.23,3.12 4.79,2.78 5.45,2.53 C6.09,2.28 6.81,2.11 7.88,2.06 C8.94,2.01 9.28,2 12,2 Z M12,6.86 C9.16,6.86 6.87,9.16 6.87,12 C6.87,14.84 9.16,17.13 12,17.13 C14.84,17.13 17.13,14.84 17.13,12 C17.13,9.16 14.84,6.86 12,6.86 Z M12,15.33 C10.16,15.33 8.67,13.84 8.67,12 C8.67,10.16 10.16,8.67 12,8.67 C13.84,8.67 15.33,10.16 15.33,12 C15.33,13.84 13.84,15.33 12,15.33 Z M17.34,5.46 C16.68,5.46 16.14,6 16.14,6.66 C16.14,7.32 16.68,7.86 17.34,7.86 C18,7.86 18.54,7.32 18.54,6.66 C18.54,6 18,5.46 17.34,5.46 Z"/></svg>
+        </a>
+      </div>
+      <div class="site-footer__links">
+        <a href="https://oferocol.com/servicios/">Servicio Técnico</a>
+        <a href="https://oferocol.com/contacto/">Contacto</a>
+        <a href="https://drive.google.com/uc?export=download&id=1ucg56W8B91vzU48egMVsrGBjQeTiB47j">Política de datos</a>
+        <a href="https://oferocol.com/pqrs/">PQRS</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+      const nav = document.getElementById('site-nav');
+      const isOpen = nav.classList.toggle('is-open');
+      this.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Scroll animations
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.feature-alt').forEach(el => revealObs.observe(el));
+    document.querySelectorAll('.feature-stacked').forEach(el => revealObs.observe(el));
+    document.querySelectorAll('.feature-glare').forEach(el => revealObs.observe(el));
+
+    // Waterproof image parallax
+    const waterproofImageObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          waterproofImageObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.waterproof__image').forEach(el => waterproofImageObs.observe(el));
+
+    // Glare — scroll driven, pico en centro del viewport
+    const faroSection = document.querySelector('[data-glare]');
+    const faroImage = faroSection && faroSection.querySelector('.feature-alt__image');
+    if (faroImage) {
+      function updateGlare() {
+        const rect = faroSection.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const sectionCenter = rect.top + rect.height / 2;
+        const distFromCenter = Math.abs(sectionCenter - vh / 2);
+        const range = vh * 0.75;
+        const intensity = Math.max(0, 1 - distFromCenter / range);
+        faroImage.style.setProperty('--glare-opacity', intensity.toFixed(3));
+      }
+      window.addEventListener('scroll', updateGlare, { passive: true });
+      updateGlare();
+    }
+
+    // Glare verde — scroll driven para Feature 5 y Feature 6
+    document.querySelectorAll('[data-glare-green]').forEach(section => {
+      const imageEl = section.querySelector('.feature-glare__image');
+      if (!imageEl) return;
+      function updateGlareGreen() {
+        const rect = section.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const sectionCenter = rect.top + rect.height / 2;
+        const distFromCenter = Math.abs(sectionCenter - vh / 2);
+        const range = vh * 0.75;
+        const intensity = Math.max(0, 1 - distFromCenter / range);
+        imageEl.style.setProperty('--glare-green-opacity', intensity.toFixed(3));
+      }
+      window.addEventListener('scroll', updateGlareGreen, { passive: true });
+      updateGlareGreen();
+    });
+
+    // Gradiente scroll-driven para secciones feature-stacked
+    document.querySelectorAll('[data-gradient]').forEach(section => {
+      function updateGradient() {
+        const rect = section.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const sectionCenter = rect.top + rect.height / 2;
+        const distFromCenter = Math.abs(sectionCenter - vh / 2);
+        const range = vh * 0.85;
+        const intensity = Math.max(0, 1 - distFromCenter / range);
+        section.style.setProperty('--gradient-progress', intensity.toFixed(3));
+      }
+      window.addEventListener('scroll', updateGradient, { passive: true });
+      updateGradient();
+    });
+  </script>
+</body>
+</html>
