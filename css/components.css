@@ -403,15 +403,21 @@ section {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: var(--space-md);
-    background-color: var(--bg-white);
-    box-shadow: var(--shadow-lg);
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, background-color 0.3s ease;
   }
 
-  .site-header__nav.is-open { max-height: calc(100vh - var(--header-height)); overflow-y: auto; }
+  .site-header__nav.is-open {
+    padding: var(--space-md);
+    background-color: var(--bg-white);
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+  }
 
   .site-header__menu { flex-direction: column; align-items: stretch; gap: 0; }
   .site-header__menu li { border-bottom: 1px solid var(--gray-2); }
