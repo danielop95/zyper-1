@@ -494,7 +494,7 @@ section {
 .product-hero__logo {
   width: min(310px, 26vw);
   display: block;
-  margin-top: -2.5rem;
+  margin-top: -12.5rem;
 }
 
 .product-hero__specs-img {
