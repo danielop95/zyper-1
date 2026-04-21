@@ -1297,6 +1297,7 @@ section {
 
   .product-hero__logo {
     width: min(280px, 70vw);
+    filter: brightness(0) invert(1);
   }
 
   .product-hero__specs-img {
